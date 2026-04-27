@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", ui-serif, Georgia, serif;
+
+  --color-vanguard-bg: #0a0b0d;
+  --color-vanguard-card: #16181d;
+  --color-vanguard-accent: #c5a059;
+  --color-vanguard-text: #e0e0e0;
+}
+
+body {
+  @apply bg-vanguard-bg text-vanguard-text antialiased;
+}

@@ -1,0 +1,38 @@
+{
+  "entities": {
+    "Trek": {
+      "title": "Trek",
+      "description": "A trekking event.",
+      "type": "object",
+      "properties": {
+        "title": { "type": "string", "maxLength": 100 },
+        "location": { "type": "string", "maxLength": 100 },
+        "date": { "type": "string", "maxLength": 50 },
+        "duration": { "type": "string", "maxLength": 50 },
+        "difficulty": { "type": "string", "maxLength": 20 },
+        "maxParticipants": { "type": "number", "minimum": 2, "maximum": 50 },
+        "participantNames": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "participantIds": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "image": { "type": "string", "maxLength": 500 },
+        "hostName": { "type": "string", "maxLength": 100 },
+        "hostId": { "type": "string", "maxLength": 128 },
+        "description": { "type": "string", "maxLength": 1000 },
+        "createdAt": { "type": "number" },
+        "updatedAt": { "type": "number" }
+      },
+      "required": ["title", "location", "date", "duration", "difficulty", "maxParticipants", "participantNames", "participantIds", "image", "hostName", "hostId", "description", "createdAt", "updatedAt"]
+    }
+  },
+  "firestore": {
+    "/treks/{trekId}": {
+      "schema": { "$ref": "#/entities/Trek" },
+      "description": "Trekking events."
+    }
+  }
+}
