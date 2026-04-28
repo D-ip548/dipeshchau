@@ -2,9 +2,9 @@
   "projectId": "gen-lang-client-0264602209",
   "appId": "1:544336776064:web:4e63acb24a9bd06c250f65",
   "apiKey": "AIzaSyDjiOeORJu3NjLYWe024a-kySoMIOAPT64",
-  "authDomain": firebaseConfig = {
+  "authDomain": firebaseConfig = 
   authDomain: "vanguard-1d828.firebasconsteapp.com",
-}
+
   "firestoreDatabaseId": "ai-studio-afa724ba-7b4b-45d6-9ec8-6ff759f043ef",
   "storageBucket": "gen-lang-client-0264602209.firebasestorage.app",
   "messagingSenderId": "544336776064",
